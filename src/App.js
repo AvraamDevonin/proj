@@ -21,10 +21,13 @@ const outerTheme = createMuiTheme({
 		},
 		secondary: {
 			light: "#457b9d",
-			main: "#e63946", //red
+			main: "#a8dadc", 
 			dark: "#457b9d",
 			contrastText: "#1d3557",
 		},
+		warning: {
+			main: '#e63946'
+		  }
 	},
 	shadows: Array(25).fill("none"),
 });
