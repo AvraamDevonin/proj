@@ -1,6 +1,6 @@
-function singUp(user, callback) {
-  console.log("USER IN FETCH ", user);
-  fetch("http://localhost:3030/register", {
+function singIn(user, callback) {
+ 
+  fetch("http://localhost:3030/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
@@ -10,4 +10,4 @@ function singUp(user, callback) {
   .then(data => callback(data))
 }
 
-export default singUp;
+export default singIn;

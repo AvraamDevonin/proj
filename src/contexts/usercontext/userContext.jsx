@@ -6,7 +6,9 @@ export default function UserContextProvider({ children }) {
     const [user, setuser] = useState({
         name: '',
         email: '',
-        password: ''
+        password: '',
+        isLogin: false,
+        avatar: ''
     });
 
  

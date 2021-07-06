@@ -9,7 +9,10 @@ import {AppBar, Toolbar, CssBaseline, useScrollTrigger, Box, Container, Slide } 
 import HomePage from "./components/homePage/homePage";
 import Header from './components/header/header'
 import SingUp from './components/sing/singUp/singUp'
+import SingIn from './components/sing/singIn/singIn';
 import Footer from './components/footer/footer';
+import Room from './components/room/room';
+
 
 const outerTheme = createMuiTheme({
 	palette: {
@@ -81,14 +84,18 @@ function App() {
 
 					</Container>
 
-					
-
 					<Switch>
 						<Route path="/checkup">
 							<SingUp />
 						</Route>
+						<Route path="/checkin">
+							<SingIn />
+						</Route>
 
 
+						<Route path="/room">
+							<Room/>
+						</Route>
 
 						<Route path="/">
 							<HomePage />
